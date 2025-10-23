@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Sederhana</title>
+
+  <!-- CSS Langsung di Sini -->
+  <style>
+    /* Gaya umum halaman */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background-color: #00aaff;
+      color: white;
+      padding: 20px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    /* Tombol */
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di Website Sederhana</h1>
+    <p>Website ini dibuat dengan HTML, CSS, dan JavaScript dalam satu file</p>
+  </header>
+
+  <main>
+    <button id="klikBtn">Klik Aku!</button>
+    <p id="pesan"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Website Sederhana oleh Kamu</p>
+  </footer>
+
+  <!-- JavaScript Langsung di Sini -->
+  <script>
+    // Ambil elemen tombol dan paragraf
+    const tombol = document.getElementById("klikBtn");
+    const pesan = document.getElementById("pesan");
+
+    // Tambahkan event klik
+    tombol.addEventListener("click", function() {
+      pesan.textContent = "Terima kasih sudah mengklik tombol ini! 😄";
+      pesan.style.color = "#0078d7";
+    });
+  </script>
+</body>
+</html>
